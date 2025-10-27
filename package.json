@@ -1,0 +1,28 @@
+{
+	"name": "nilaos",
+	"version": "1.0.0",
+	"description": "",
+	"main": "backend/index.js",
+	"scripts": {
+		"start": "node backend/index.js",
+		"setcap": "sudo setcap 'cap_net_bind_service=+ep' $(readlink -f $(which node))",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Onvo-AB/NilaOS.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Onvo-AB/NilaOS/issues"
+	},
+	"homepage": "https://github.com/Onvo-AB/NilaOS#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"url": "^0.11.0",
+		"ws": "^8.12.1"
+	}
+}
